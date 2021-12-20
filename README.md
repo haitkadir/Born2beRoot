@@ -16,10 +16,16 @@
 
 - `etc/ssh/sshd_config` path where port defined
 # Commends
-- `service ssh status` to show ssh status
+- `systemctl status ssh` to show ssh status
 - `hostnamectl set-hostname newHostName` to change hostname
 - `groupadd [options] groupName` to create group
-- `cat /etc/group` to list all groups
+- `getent group` to list all groups details
+- `compgen -g` to list all groups names only
 - `groupdel [options] groupName` to delete a group
 - `useradd [options] newUserName` to add a user
+- `compgen -u` to list all users names
+- `getent passwd` to list all users names and details
 - `userdel [options] userName` to delete a user
+
+# Favorite commands
+- `compgen [option required]` this great command shorts many stuff that you w'll use `grep` or `cut` and thier flags for wich I don't realy preffer
